@@ -2,7 +2,7 @@ remote_state {
   backend = "azurerm"
   config = {
     resource_group_name  = "rg-tfstate-dev"
-    storage_account_name = "saminfinstate"
+    storage_account_name = "saminfinstate0031"
     container_name       = "terraform"
     key                  = "minfin-foundation/${path_relative_to_include()}/terraform.tfstate"
   }
@@ -24,7 +24,7 @@ generate "provider" {
   contents  = <<-EOF
     provider "azurerm" {
       features {}
-      subscription_id = "fcf5d60d-25fe-420b-8217-72c34a3c2c8d"
+      subscription_id = "2b90dacf-8192-44c5-bc8f-777e28d7c89e"
     }
   EOF
 }
